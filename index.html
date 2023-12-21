@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Syne&display=swap">
+  <link rel="stylesheet" href="https://www.wsj.com/finance/currencies">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name = "viewport" content="width=device-width, initial-scale = 1">
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <title>Currency Converter</title>
+</head>
+<body>
+  <section id="banner">
+    <img src="letter.png" class="logo">
+    <div class="banner-text">
+      <h1>Currency Converter</h1>
+      <p>"Seamless Currency Conversions: Reliable and Effortless.
+      </p>
+    <div class="banner-btn">
+      <a href="converter.html"><span></span>Convert</a>
+
+    </div>
+    </div>
+  </section>
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="#banner">HOME</a></li>
+        <li><a href="#features">INFO</a></li>
+        <li><a href="wiki.html" target="_blank">CURRENCY WIKI</a></li>
+        <li><a href="#hero">ABOUT US</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="more.png" id="menu">
+  </div>
+
+  <!---Features---->
+  <section id="features">
+    <div class="titles-text">
+      <h1>Why Currency Converter is Better?</h1>
+    </div>
+    <div class="feature-box">
+      <div class="features">
+        <h1>RELIABLE</h1>
+        <div class="descriptions">
+          <div class="featext">
+            <p>A currency converter is considered superior for several reasons. Firstly, it ensures accuracy and timeliness by utilizing up-to-date exchange rates, providing users with precise conversion values in real-time. Its convenience is notable, especially for travelers, businesses, and individuals engaging in international transactions, as it eliminates the need for manual calculations. In our increasingly globalized world, currency converters facilitate seamless international trade and finance, offering quick insights into the value of money in different currencies. Online and mobile accessibility further enhance their utility, allowing users to convert currencies on the go. Some advanced converters also provide historical exchange rate data, aiding in trend analysis and informed decision-making. Integration with financial systems, real-time updates, support for multiple currencies, and user-friendly interfaces contribute to their effectiveness. Moreover, these tools assist with financial planning by helping users understand the impact of currency fluctuations on budgets, expenses, and investments. Despite these advantages, users should select reliable sources and platforms to ensure accurate and secure transactions, considering potential fees and rate variations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-img">
+        <img src="man.png" alt="Reliable Image">
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="features1">
+        <h1>EFFORTLESS</h1>
+          <div class="desc">
+          <div class="text">
+            <p>Our effortless currency converter is designed to simplify your financial transactions with ease. Our user-friendly tool leverages the latest exchange rates, ensuring accuracy in converting any amount between different currencies. Whether you're a frequent traveler, a global business professional, or simply managing personal finances, our currency converter provides a seamless experience. Input your desired amount, select the source and target currencies, and let our tool handle the rest. Stay informed about currency fluctuations effortlessly, making your financial decisions smoother than ever.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feat-img">
+      <img src="girl.jpg" alt="Effortless Image">
+    </div>
+    </div>
+     
+  </section>
+  
+  <!------------About Us-->
+  <section id="hero">
+    <div class="heading">
+      <h1>About Us</h1>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Innovators Tech</h2>
+        <p>The platform is portrayed as a reliable, user-friendly tool offering real-time exchange rates, a wide range of currencies, and a commitment to accuracy, privacy, and security. Users are encouraged to reach out for questions or suggestions, and social media channels are highlighted for staying connected. Overall, the section aims to build trust and convey the platform's dedication to simplifying currency conversion for users.</p>
+        <a href="https://www.wsj.com/finance/currencies" target="_blank">
+          <button class="cta-button">Learn More</button>
+        </a>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=61550672234107" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/riannoodledoodle/" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Corrected class name here -->
+          <a href="https://twitter.com/maximussrian" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="obs.jpg">
+      </div>
+    </div>
+    
+
+  </section>
+
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+  
+    sideNav.style.right = "-250px";
+  
+    menuBtn.onclick = function() {
+      if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "close.png";
+      } else {
+          sideNav.style.right = "-250px";
+          menu.src = "more.png";
+      }
+    }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	  speed: 600,
+	  speedAsDuration: true
+});
+  </script>
+  
+  
+</body>
+</html>

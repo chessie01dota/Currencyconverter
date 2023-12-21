@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(-45deg, #c0c0c0, #292626, #000000, #292626);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo', sans-serif;
+    font-weight: bolder;
+    font-size: 3.5vw;
+    color: white; 
+    height: 100%;
+    min-height: 600px;
+}
+
+header h1{
+    text-transform: uppercase;
+   background-image: linear-gradient(
+     -225deg,
+     #292626 0%,
+     #CD7F32 29%,
+     #c0c0c0 67%,
+     #FFD700 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+       font-size: 7.0vw;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+}
+.display{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.display .bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin-right: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.bg{
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: 130px;
+
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: 30px;
+}
+
+h2{
+    max-width: 300px;
+    color: white;
+}
+
+.display .content h4{
+    color: rgba(255, 255, 2555, 0.5);
+}
+
+.display .content h4 span{
+    padding: 0 10px;    
+    border-right: 1px solid rgba(255, 255, 2555, 0.5);
+}
+
+.display .content h4 span:last-child{
+    border-right: 0;
+}
+
+.display .content p{
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.5em;
+    margin: 1px 0 20px;
+}
+
+.display .content .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 1.2s;
+
+}
+
+.display .content .button a:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.display2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.display2 .bg2{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+
+}
+
+.bg2{
+    max-width: 350px;
+    max-height: 350px;
+    margin-right: 130px;
+}
+
+.display2 .content h4{
+    color: rgba(255, 255, 2555, 0.5);
+}
+
+.display2 .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 2555, 0.5);
+}
+
+.display2 .content h4 span:last-child{
+    border-right: 0;
+}
+
+.display2 .content p{
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.5em;
+    margin: 1px 0 20px;
+}
+
+.display2 .content .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 1.2s;
+
+}
+
+.display2 .content .button a:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 3s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+}
